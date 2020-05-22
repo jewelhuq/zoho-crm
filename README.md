@@ -64,7 +64,7 @@ Enter the previously generated code.
 
 ##Sample
 
-   $data= [
+   `$data= [
             'Email'        =>  $email,
             'Last_Name'    => "$first_name",
             'Lead_Status'  => "Status",
