@@ -64,7 +64,7 @@ Enter the previously generated code.
 
 ##Sample
 
-   `$data= [
+   ```$data= [
             'Email'        =>  $email,
             'Last_Name'    => "$first_name",
             'Lead_Status'  => "Status",
@@ -78,7 +78,7 @@ Enter the previously generated code.
 
         $record = ZohoCRM::createRecords('Leads',[ $data]);
         $zoho_crm_id       = Arr::get($record, '0.details.id')??0;
-
+```
 
 ## Roadmap
 
