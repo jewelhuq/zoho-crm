@@ -61,6 +61,25 @@ Enter the previously generated code.
 
 **Zoho CRM is ready to use.**
 
+
+##Sample
+
+   $data= [
+            'Email'        =>  $email,
+            'Last_Name'    => "$first_name",
+            'Lead_Status'  => "Status",
+            'Phone'        => $phone,
+            'City'         => "$city",
+            'State'        => "$state",
+            'Zip_Code'     => "$zip",
+            'Country'      => "$country",
+            'Time_Zone'    => "$timezone",
+        ];
+
+        $record = ZohoCRM::createRecords('Leads',[ $data]);
+        $zoho_crm_id       = Arr::get($record, '0.details.id')??0;
+
+
 ## Roadmap
 
 You can find the latest development roadmap for this package [here](docs/roadmap.md). Feel free to open an [issue](https://github.com/InterConnectaOrg/zoho-crm/issues) if you have a feature request.
